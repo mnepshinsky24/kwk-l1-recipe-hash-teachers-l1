@@ -1,5 +1,5 @@
 
-    perfect_10_ingredients = {
+    perfect_10_recipe = {
       :almond_flour => "2 cups",
       :gluten_freewhole_oats => "1 cup",
       :kosher_salt => "1/2 tea spoon",
@@ -14,45 +14,50 @@
 
 
 
-def recipe_ingredients(perfect_10_recipe)
-  perfect_10_recipe
-end
+# def recipe_ingredients(perfect_10_recipe)
+#   perfect_10_recipe
+# end
+# # puts recipe_ingredients(perfect_10_recipe)
 
-def amount_of_chocolate_chips(perfect_10_recipe)
-  perfect_10_recipe[:mini_dark_chocolate_chips]
-end
+# def amount_of_chocolate_chips(perfect_10_recipe)
+#   perfect_10_recipe[:mini_dark_chocolate_chips]
+# end
 
+# puts amount_of_chocolate_chips(perfect_10_recipe)
 
 def ingredients_and_amounts(perfect_10_recipe)
   perfect_10_recipe.each do |key, value|
-    puts "#{key} #{value}"
+    puts "Ingredient: #{key}"
   end
 
 end
 
 
-#5:
-def ingredients(perfect_10_recipe)
-  #you'll need to include your whole hash in this method
-  #code your solution here
+puts ingredients_and_amounts(perfect_10_recipe)
 
-  perfect_10_recipe.each_key { |key| puts key }
-end
 
-#6:
-def amounts(perfect_10_recipe)
-  #you'll need to include your whole hash in this method
-  #code your solution here
+# #5:
+# def ingredients(perfect_10_recipe)
+#   #you'll need to include your whole hash in this method
+#   #code your solution here
 
-  perfect_10_recipe.each_value do |value|
-    puts value
-  end
-end
+#   perfect_10_recipe.each_key { |key| puts key }
+# end
 
-#7:
-def number_ingredients(perfect_10_recipe)
-  #you'll need to include your whole hash in this method
-  #code your solution here
+# #6:
+# def amounts(perfect_10_recipe)
+#   #you'll need to include your whole hash in this method
+#   #code your solution here
 
-  perfect_10_recipe.length
-end
+#   perfect_10_recipe.each_value do |value|
+#     puts value
+#   end
+# end
+
+# #7:
+# def number_ingredients(perfect_10_recipe)
+#   #you'll need to include your whole hash in this method
+#   #code your solution here
+
+#   perfect_10_recipe.length
+# end
